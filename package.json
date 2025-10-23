@@ -1,0 +1,64 @@
+{
+  "name": "code-lecturer",
+  "displayName": "Code-lecturer",
+  "description": "A beginner-friendly explanation of the code",
+  "version": "0.0.1",
+  "publisher": "Tianshuo Chen",
+  "engines": {
+    "vscode": "^1.104.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:code-lecturer.explainCode"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "menus": {
+      "editor/context": [
+        {
+          "when": "editorHasSelection",
+          "command":"code-lecturer.explainCode",
+          "group": "navigation"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "code-lecturer.explainCode",
+        "title": "Explain This Code (AI)"
+      }
+    ],
+    "configuration": {
+      "title": "Code Lecturer",
+      "properties": {
+        "code-lecturer.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "用于代码解释的 DeepSeek API 密钥 (以 sk- 开头)。",
+          "scope": "application" 
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.105.0",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "22.x",
+    "@typescript-eslint/eslint-plugin": "^8.45.0",
+    "@typescript-eslint/parser": "^8.45.0",
+    "eslint": "^9.36.0",
+    "typescript": "^5.9.3",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
