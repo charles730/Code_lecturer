@@ -12,13 +12,24 @@
 
 本插件**需要**你自己提供 DeepSeek API 密钥。
 
-1.  安装本插件后，打开 VS Code 的设置 (快捷键 `Cmd+,` 或 `Ctrl+,`)。
-2.  在搜索框中，搜索 **`code-lecturer.apiKey`**。
-3.  在输入框中，粘贴你自己的 DeepSeek API 密钥 (以 `sk-` 开头)。
+## 插件安装
+
+1. 打开VS Code。
+2. 点击左侧的**“扩展”**图标（乐高积木块）。
+3. 在“扩展”视图的顶部，点击 "..." (更多操作) 菜单。
+4. 选择 "Install from VSIX..." (从 VSIX 安装...)。
+5. 在弹出的文件选择器中，找到本地下载的插件的 .vsix 文件。
+6. 安装完成后，VS Code 可能会提示重新加载窗口。
+
+## API-key配置
+
+1. 安装本插件后，打开 VS Code 的设置 (快捷键 `Cmd+,` 或 `Ctrl+,`)。
+2. 在搜索框中，搜索 **`code-lecturer.apiKey`**。
+3. 在输入框中，粘贴你自己的 DeepSeek API 密钥 (以 `sk-` 开头)。
 
 ## 如何使用
 
-1.  配置好 API Key。
-2.  打开任意代码文件。
-3.  选中一段你想了解的代码。
-4.  右键 -> "Explain This Code (AI)"。
+1. 配置好 API Key。
+2. 打开任意代码文件。
+3. 选中一段你想了解的代码。
+4. 右键 -> "Explain This Code (AI)"。
