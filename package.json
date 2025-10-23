@@ -4,6 +4,10 @@
   "description": "A beginner-friendly explanation of the code",
   "version": "0.0.1",
   "publisher": "Tianshuo Chen",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/charles730/Code_lecturer.git"
+  },
   "engines": {
     "vscode": "^1.104.0"
   },
